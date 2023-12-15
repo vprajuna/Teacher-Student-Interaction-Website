@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discussions",
+  "info": {
+    "name": "Discussion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "classroom": {
+      "via": "discussion",
+      "model": "classroom"
+    },
+    "discussion_posts": {
+      "collection": "discussion-post"
+    }
+  }
+}
